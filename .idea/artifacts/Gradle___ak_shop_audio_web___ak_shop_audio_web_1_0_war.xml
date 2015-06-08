@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : ak_shop_audio_web : ak_shop_audio_web-1.0.war">
+    <output-path>$PROJECT_DIR$/build/classes/artifacts/ak_shop_audio_web</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$" />
+    </properties>
+    <root id="archive" name="ak_shop_audio_web-1.0.war">
+      <element id="javaee-facet-resources" facet="ak_shop_audio_web/web/Web Gradle : ak_shop_audio_web-1.0.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ak_shop_audio_web" />
+          <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="Gradle: gson-2.2.4" module-name="ak_shop_audio_web" />
+          <element id="library" level="module" name="Gradle: sqlite-jdbc-3.8.10.1" module-name="ak_shop_audio_web" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/build/classes/artifacts/ak_shop_audio_web/exploded/ak_shop_audio_web-1.0.war/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
