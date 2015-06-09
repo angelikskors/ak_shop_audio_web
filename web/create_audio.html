@@ -6,12 +6,12 @@ and open the template in the editor.
 -->
 <html>
 <head>
-    <title>Create album</title>
+    <title>Create audio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<form action="albums" method="GET">
+<form action="audios" method="GET">
     <input type="hidden" name="method" value="create"/>
     ID:<br>
     <input type="text" name="id">
@@ -19,19 +19,21 @@ and open the template in the editor.
     Name:<br>
     <input type="text" name="name">
     <br>
-    Year:<br>
-    <input type="text" name="year">
+    Author id:<br>
+    <input type="text" name="author_id">
+    <br>
+    Duration:<br>
+    <input type="text" name="duration">
+    <br>
+    Price:<br>
+    <input type="text" name="price">
+    <br>
+    Genre id:<br>
+    <input type="text" name="genre_id">
+    <br>
+    Album id:<br>
+    <input type="text" name="album_id">
     <br><br>
-    Producer id:<br>
-    <input type="text" name="producer_id">
-    <br>
-    Country: <br>
-    <input type="text" name="country">
-    <br>
-    Language:<br>
-    <input type="text" name="language">
-    <br>
-    <br>
     <input type="submit" value="Save">
 </form>
 </body>

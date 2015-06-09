@@ -1,23 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.1"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
         <servlet-name>AlbumsServiceServlet</servlet-name>
         <servlet-class>org.oa.tp.servlets.AlbumsServiceServlet</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>AudiosServiceServlet</servlet-name>
+        <servlet-class>org.oa.tp.servlets.AudiosServiceServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AuthorsServiceServlet</servlet-name>
+        <servlet-class>org.oa.tp.servlets.AuthorsServiceServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CarsServiceServlet</servlet-name>
+        <servlet-class>org.oa.tp.servlets.CarsServiceServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CatsServiceServlet</servlet-name>
+        <servlet-class>org.oa.tp.servlets.CatsServiceServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CustomersServiceServlet</servlet-name>
+        <servlet-class>org.oa.tp.servlets.CustomersServiceServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GenresServiceServlet</servlet-name>
+        <servlet-class>org.oa.tp.servlets.GenresServiceServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OrdersServiceServlet</servlet-name>
+        <servlet-class>org.oa.tp.servlets.OrdersServiceServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProducersServiceServlet</servlet-name>
+        <servlet-class>org.oa.tp.servlets.ProducersServiceServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AudiosServiceServlet</servlet-name>
+        <url-pattern>/audios</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AuthorsServiceServlet</servlet-name>
+        <url-pattern>/authors</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CarsServiceServlet</servlet-name>
+        <url-pattern>/cars</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CatsServiceServlet</servlet-name>
+        <url-pattern>/cats</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CustomersServiceServlet</servlet-name>
+        <url-pattern>/customers</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GenresServiceServlet</servlet-name>
+        <url-pattern>/genres</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OrdersServiceServlet</servlet-name>
+        <url-pattern>/orders</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProducersServiceServlet</servlet-name>
+        <url-pattern>/producers</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AlbumsServiceServlet</servlet-name>
+        <url-pattern>/albums</url-pattern>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>AlbumsViewServlet</servlet-name>
         <servlet-class>org.oa.tp.servlets.AlbumsViewServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-    <servlet-name>AlbumsServiceServlet</servlet-name>
-    <url-pattern>/albums</url-pattern>
-</servlet-mapping>
-    <servlet-mapping>
         <servlet-name>AlbumsViewServlet</servlet-name>
         <url-pattern>/albums-view</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>AudiosViewServlet</servlet-name>
+        <servlet-class>org.oa.tp.servlets.AudiosViewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AudiosViewServlet</servlet-name>
+        <url-pattern>/audios-view</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AuthorsViewServlet</servlet-name>
+        <servlet-class>org.oa.tp.servlets.AuthorsViewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthorsViewServlet</servlet-name>
+        <url-pattern>/authors-view</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CarsViewServlet</servlet-name>
+        <servlet-class>org.oa.tp.servlets.CarsViewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CarsViewServlet</servlet-name>
+        <url-pattern>/cars-view</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CatsViewServlet</servlet-name>
+        <servlet-class>org.oa.tp.servlets.CatsViewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CatsViewServlet</servlet-name>
+        <url-pattern>/cats-view</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CustomersViewServlet</servlet-name>
+        <servlet-class>org.oa.tp.servlets.CustomersViewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomersViewServlet</servlet-name>
+        <url-pattern>/customers-view</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>GenresViewServlet</servlet-name>
+        <servlet-class>org.oa.tp.servlets.GenresViewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GenresViewServlet</servlet-name>
+        <url-pattern>/genres-view</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>OrdersViewServlet</servlet-name>
+        <servlet-class>org.oa.tp.servlets.OrdersViewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrdersViewServlet</servlet-name>
+        <url-pattern>/orders-view</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ProducersViewServlet</servlet-name>
+        <servlet-class>org.oa.tp.servlets.ProducersViewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProducersViewServlet</servlet-name>
+        <url-pattern>/producers-view</url-pattern>
+    </servlet-mapping>
+
     <session-config>
         <session-timeout>
             30

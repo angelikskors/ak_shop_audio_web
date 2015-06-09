@@ -6,32 +6,28 @@ and open the template in the editor.
 -->
 <html>
 <head>
-    <title>Create album</title>
+    <title>Create order</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<form action="albums" method="GET">
+<form action="orders" method="GET">
     <input type="hidden" name="method" value="create"/>
     ID:<br>
-    <input type="text" name="id">
+    <input type="text" name="id"> <br>
+    DATE:<br>
+    <input type="text" name="date">
     <br>
-    Name:<br>
-    <input type="text" name="name">
+    AUDIO ID:<br>
+    <input type="text" name="audio_id">
     <br>
-    Year:<br>
-    <input type="text" name="year">
-    <br><br>
-    Producer id:<br>
-    <input type="text" name="producer_id">
+    AMOUNT:<br>
+    <input type="text" name="amount">
     <br>
-    Country: <br>
-    <input type="text" name="country">
+    CUSTOMER ID:<br>
+    <input type="text" name="customer_id">
     <br>
-    Language:<br>
-    <input type="text" name="language">
-    <br>
-    <br>
+
     <input type="submit" value="Save">
 </form>
 </body>
